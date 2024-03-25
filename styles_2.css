@@ -1,5 +1,5 @@
 li {
-    list-style-type: none;
+    /*list-style-type: none;*/
 }
 
 a {
@@ -8,17 +8,34 @@ a {
 
 }
 
+h1 {
+    font-size: 3.125rem;
+}
+
+
 h2 {
     font-size: 2.1875rem;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #f8f8f8;
 }
 
 p {
     font-size: 1.25rem;
     line-height: 1.5;
+    color: #fff;
 }
 
 body {
     font-family: 'Raleway', Arial, sans-serif;
+    /*background-image: url("img/fon.jpg ");*/
+    /*width: 100%;*/
+    /*object-fit: cover;*/
+    /*background-size: contain;*/
+    /*background-repeat: repeat;*/
 }
 
 
@@ -56,6 +73,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    list-style-type: none;
 }
 
 .el-911__of-site img {
@@ -94,6 +112,10 @@ body {
 /*.Вверхнее меню*/
 
 /*Body*/
+.el-911__body {
+    padding-bottom: 40px;
+}
+
 .el-911__block-one {
     display: flex;
     gap: 20px;
@@ -121,6 +143,7 @@ body {
 
 .el-911__title span {
     color: #D12030;
+
 }
 
 .el-911__block-left img {
@@ -218,6 +241,52 @@ body {
     border: none;
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
+
+/*О продкте*/
+.el-911__blocks__product {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.el-911__title-product {
+    border-bottom: 1px solid #ffffff;
+}
+
+.el-911__el-911__text {
+    color: #D12030;
+    list-style-type: initial !important;
+    font-size: 1.25rem;
+}
+
+/*.О продкте*/
+/*Применение*/
+.el-911__title-application {
+    border-bottom: 1px solid #ffffff;
+}
+
+.el-911__blocks__application {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.el-911__blocks__applications:nth-child(odd) .el-911__blocks__application {
+    flex-direction: row-reverse;
+}
+
+.el-911__img img {
+    width: 100%;
+}
+
+.el-911__blick-application__left {
+    color: #f8f8f8;
+}
+
+/*.Применение*/
 
 /*.Body*/
