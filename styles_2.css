@@ -1,0 +1,223 @@
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+h2 {
+    font-size: 2.1875rem;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+
+.el-911 {
+    position: relative;
+    background-color: #1e1e1e;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    padding-left: 15px;
+    width: 100%;
+    padding-right: 15px;
+}
+
+.el-911__top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0.95;
+    background-color: #191919;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.el-911__top-menu :hover {
+    color: #D12030;
+}
+
+.el-911__left-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.el-911__of-site img {
+    width: 130px;
+}
+
+.el-911__uslugi {
+    padding-left: 35px;
+}
+
+
+.el-911__right-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.el-911__tel a {
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+
+.el-911__email img {
+    width: 32px;
+    transition: 1s
+}
+
+.el-911__email :hover {
+    width: 32px;
+    transform: scale(1.2);
+}
+
+/*.Вверхнее меню*/
+
+/*Body*/
+.el-911__block-one {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-top: 20px;
+
+}
+
+.el-911__block-left {
+    flex: 0 0 50%;
+}
+
+.el-911__block-left h1 {
+    color: #f8f8f8;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.el-911__title span {
+    color: #D12030;
+}
+
+.el-911__block-left img {
+    width: 310px;
+    margin: 0 auto;
+    display: block;
+}
+
+.el-911__block-form {
+    background: #191919;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 90%;
+
+}
+
+.el-911__block-form {
+    color: white;
+}
+
+.el-911__link-tel a {
+    color: #D12030;
+}
+
+.el-911__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.el-911__form input {
+    background-color: #1e1e1e;
+    border: none;
+    color: #ffffff;
+
+}
+
+
+/* Очистить поплавки */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.el-911__fio, .el-911__tel {
+    position: relative;
+}
+
+.control-label {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+}
+
+.el-911__form-control {
+    display: block;
+    width: 100%;
+    height: 43px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.el-911__check__control-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.el-911__btn {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.el-911__btn button {
+    padding: 20px 42px;
+    background: #D12030;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+/*.Body*/
