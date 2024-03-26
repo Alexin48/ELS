@@ -293,17 +293,9 @@ body {
 
 /*.Применение*/
 /*Отзывы*/
-.otzivy {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-}
 
-.otzivy__rows {
-    flex: 0 0 45%;
-}
+
+
 
 .otzivy__text {
     background: #333332;
