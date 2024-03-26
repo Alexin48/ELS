@@ -295,13 +295,35 @@ body {
 /*Отзывы*/
 
 
+.mySwiper {
+    overflow: hidden;
+}
 
+.swiper-button-prev {
+    left: 16% !important;
+    color: #D12030 !important;
+
+}
+
+.swiper-button-next {
+    right: 16% !important;
+    color: #D12030 !important;
+    /*background-color: rgba(232, 232, 232, 0.6);*/
+    /*margin-top: 0;*/
+}
+
+.swiper-scrollbar {
+    color: #D12030 !important;
+}
 
 .otzivy__text {
     background: #333332;
     border-radius: 20px;
     padding: 30px;
     margin: 0;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 1.5;
 }
 
 .otzivy__bubble-tail {
@@ -325,6 +347,55 @@ body {
     max-width: 100px;
 }
 
+.otzivy__name {
+    color: #D12030;
+}
+
 /*.Отзывы*/
+/*Контакты*/
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.contacts__block-left {
+    flex: 0 0 40%;
+}
+
+.contacts__block-form {
+    background: #333332;
+}
+
+.contacts__info {;
+
+    font-size: 28px;
+}
+
+.contacts__message {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    width: 100%
+;
+}
+.contacts__message img{
+    width: 56px;
+}
+
+/*.Контакты*/
 
 /*.Body*/
+
+/*footer*/
+footer {
+    height: 410px;
+}
+
+/*.footer*/
