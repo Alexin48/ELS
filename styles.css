@@ -53,9 +53,15 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
+    margin-bottom: 15px;
     padding-left: 15px;
     width: 100%;
     padding-right: 15px;
+
+}
+
+.fon {
+    padding: 20px 0;
 }
 
 /*Вверхнее  меню*/
@@ -353,23 +359,147 @@ body {
 
 /*.Отзывы*/
 /*Применение  */
-.works__mySwiper{
+
+.works__mySwiper {
     overflow: hidden;
-    /*height: 240px;*/
+    position: relative;
+    padding-bottom: 60px;
+
 }
+
+.swiper-button-prev {
+    /*background: rgba(232, 232, 232, 0.6);*/
+    border-radius: 50%;
+    padding: 7px !important;
+    height: auto !important;
+    left: 15% !important;
+}
+
+.swiper-button-prev:after {
+    font-size: 24px !important;
+    line-height: 0;
+}
+
+.swiper-button-next {
+    /*background: rgba(232, 232, 232, 0.6);*/
+    border-radius: 50%;
+    padding: 7px !important;
+    height: auto !important;
+    right: 15% !important;
+}
+
+.swiper-button-next:after {
+    font-size: 24px !important;
+    line-height: 0;
+}
+
+.works__swiper-button-prev {
+    position: absolute;
+    left: 0 !important;
+}
+
+.works__swiper-button-next {
+    position: absolute;
+    right: 0 !important;
+}
+
+.swiper-pagination span {
+
+    background: #D12030;
+
+}
+
+.swiper-pagination {
+
+    padding-bottom: 20px;
+
+}
+
 .works__col-1 img {
     width: 100%;
     height: auto;
     object-fit: cover;
     aspect-ratio: 4/3;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.works__col-1 {
+    background: #333332;
+    border-radius: 10px;
+    height: auto !important;
+
 }
 
 .works__col-1__img .hidden {
     display: none;
 }
 
+.works__col-1 p {
+    padding: 0 10px;
+}
+
 
 /*.Применение  */
+/*Купить*/
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.price__block-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333332;
+    aspect-ratio: 16/7;
+    border-radius: 10px;
+
+}
+
+.price__block-left img {
+    width: 100%;
+    max-width:150px;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: cover;
+    aspect-ratio: 20/9;
+}
+
+.price__marcet{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 75%;}
+.price__marcet a{
+    flex: 0 0 33%;
+}
+
+.price__block-left a {
+    text-align: center;
+
+}
+
+.price__block-right{
+    position: relative;
+    flex: 0 0 45%;
+}
+.price__img{
+    display: flex;
+}
+.price__img img{
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*.Купить*/
 /*Контакты*/
 .contacts {
     display: flex;
@@ -400,10 +530,10 @@ body {
     gap: 20px;
     align-items: center;
 
-    width: 100%
-;
+    width: 100%;
 }
-.contacts__message img{
+
+.contacts__message img {
     width: 56px;
 }
 
