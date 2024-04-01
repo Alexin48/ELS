@@ -1,24 +1,34 @@
-@media (min-width: 1000px) and (max-width: 1200px){
+@media (min-width: 1000px) and (max-width: 1200px) {
 
-.menu__media{
-    position: absolute;
-    top: 60px;
-    left: 17%;
-}
+    .menu__media {
+        position: absolute;
+        top: 60px;
+        left: 17%;
+    }
+
+    .navbar__wrap {
+        padding-bottom: 10px;
+
+    }
 }
 
 @media (max-width: 1200px) {
 
     h1 {
-        font-size: calc(28px + 22 * (100vw/1200));
+        font-size: calc(28px + 22 * (100vw / 1200));
 
+    }
+    .swiper-button-next {
+        right: 0 !important;
+    }
+    .swiper-button-prev {
+        left: 0 !important;
     }
 
 }
 
 @media (max-width: 1000px) {
     /*Вверхнее  меню*/
-
     .navbar__wrap .menu {
         display: none;
     }
@@ -92,6 +102,8 @@
         font-weight: bold;
         color: #fff;
         text-align: center;
+        max-width: 288px;
+        margin: 0 auto;
     }
 
     .popup .menu > li > a:hover {
@@ -115,37 +127,95 @@
     }
 
     /*Вверхнее  меню*/
+    .el-911__block-right {
+        font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+    .contacts__tel {
+        font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+    .contacts__info {
+        font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
 }
+
 @media (max-width: 902px) {
     /*Главный блок*/
-    .el-911__block-one{
+    .el-911__block-one {
         flex-direction: column;
     }
-.el-911__block-left h1{
-    text-align: center;
-}
-    .el-911__block-left img{
+
+    .el-911__block-left h1 {
+        text-align: center;
+    }
+
+    .el-911__block-left img {
         max-width: 403px;
     }
 
     /*.Главный блок*/
-    .product__block{
+    .product__block {
         flex-direction: column;
     }
-    /*.О ппродукте*/
 
-    .el-911__application-wrap{
+    /*.О ппродукте*/
+    /*Купить*/
+    .price__marcet{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .price__marcet a{
+        flex: 0;
+    }
+    .price__block-left img {
+        width: 150px;
+    }
+    .price__block-left{
+        width: 100%;
+        aspect-ratio:auto;
+        text-align: center;
+        padding: 10px;
+
+    }
+    .price__block-right{
+        display: none;
+    }
+
+
+    /*.Купить*/
+    /*Контакты*/
+    .contacts {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        gap: 0;
+    }
+
+    /*.Контакты*/
+    .el-911__application-wrap {
         display: block;
+    }
+
+    .product__block__right img {
+
+        max-width: 400px;
+
     }
 
 
 }
 
-@media (max-width: 530px) {
+@media (max-width: 583px) {
     /*Вверхнее  меню*/
     .menu__info {
         display: none;
     }
+
     /*Вверхнее  меню*/
 }
 
