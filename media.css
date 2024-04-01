@@ -1,4 +1,5 @@
 @media (min-width: 1000px) and (max-width: 1200px){
+
 .menu__media{
     position: absolute;
     top: 60px;
@@ -6,6 +7,14 @@
 }
 }
 
+@media (max-width: 1200px) {
+
+    h1 {
+        font-size: calc(28px + 22 * (100vw/1200));
+
+    }
+
+}
 
 @media (max-width: 1000px) {
     /*Вверхнее  меню*/
@@ -114,13 +123,16 @@
     }
 .el-911__block-left h1{
     text-align: center;
-    font-size: 40px;
 }
     .el-911__block-left img{
         max-width: 403px;
     }
 
     /*.Главный блок*/
+    .product__block{
+        flex-direction: column;
+    }
+    /*.О ппродукте*/
 
     .el-911__application-wrap{
         display: block;

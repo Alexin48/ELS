@@ -11,8 +11,6 @@ a {
 
 h1 {
     font-size: 3.125rem;
-    /*font-size: calc(20px + (38 - 20) * ((100vw - 320px) / (1170 - 320)));*/
-    /*font-size: calc(28px + 22 * (100vw/1200));*/
 
 }
 
@@ -203,6 +201,9 @@ body {
     max-width:500px;
     margin: 0 auto;
 
+}
+.el-911__block-form p{
+    margin: 0 0 10px;
 }
 
 .el-911__block-form {
