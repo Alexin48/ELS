@@ -7,6 +7,7 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
     <link type="text/css" rel="stylesheet" href="dist/css/lightgallery.css"/>
     <!--    Слайдер-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -18,51 +19,70 @@
     <title>EEl911</title>
 </head>
 <body>
+<!--Вверхнее меню-->
 <div class="container">
-    <div class="top-menu">
-        <div class="top-menu__logo"><a href="" class="elelastomeric">
-            <img src="img/logo.png" alt="">
-        </a></div>
-        <ul class="top-menu__item">
-            <li>
-                <a href="" class="el-911__product">О продукте</a>
-            </li>
-            <li>
-                <a href="" class="el-911__proects">Проекты</a>
-            </li>
-            <li>
-                <a href="" class="el-911__price">Цена</a>
-            </li>
-            <li>
-                <a href="" class="el-911__otzivs">Отзывы</a>
-            </li>
-            <li>
-                <a href="" class="el-911__about">О нас</a>
-            </li>
-            <li>
-                <a href="" class="el-911__contacts">Контакты</a>
-            </li>
-            <li class="el-911__tel">
-                <a href="tel:+79991112233">8(800) 000-00-00</a>
-            </li>
-            <li class="el-911__email">
-                <a href="mailto:ask@htmlbook.ru">
-                    <img src="/img/email.svg" alt="">
-                </a>
-            </li>
-            <li class="el-911__email">
-                <a href="vk.ru">
-                    <img src="img/vk.svg" alt="">
-                </a>
-            </li>
-        </ul>
-    </div>
+    <nav class="navbar">
+        <div class="navbar__wrap top-menu">
+            <a href="#" class="logo" id="logo"> <img src="img/logo.png" alt=""></a>
+            <ul class="menu menu__media" id="menu">
+                <li class="">
+                    <a href="#o__producte" class="el-911__product">О продукте</a>
+                </li>
+                <li class="">
+                    <a href="#applications" class="el-911__proects">Применение</a>
+                </li>
+                <li class="">
+                    <a href="#works" class="el-911__proects">Примеры выполненвых работ</a>
+                </li>
+                <li class="">
+                    <a href="#price" class="el-911__price">Цена</a>
+                </li>
+                <li class="">
+                    <a href="#otzivy" class="el-911__otzivs">Отзывы</a>
+                </li>
+                <li class="">
+                    <a href="#contacts" class="el-911__contacts">Контакты</a>
+                </li>
+            </ul>
+            <ul class="menu__block" id="">
+                <li class="">
+                    <a href="tel:+79991112233">8(800) 000-00-00</a>
+                </li>
+                <li class="menu__info">
+                    <a href="mailto:ask@htmlbook.ru">
+                        <img src="/img/email.svg" alt="">
+                    </a>
+                </li>
+                <li class="menu__info">
+                    <a href="vk.ru">
+                        <img src="img/vk.svg" alt="">
+                    </a>
+                </li>
+                <li class="menu__info">
+                    <a href="vk.ru">
+                        <img src="img/vk.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="popup" id="popup"></div>
+<!--Оставить заявку-->
+<div class="container">
     <div class="el-911__block-one">
         <div class="el-911__block-left">
             <h1 class="el-911__title">
                 Лучшее решение для гидроизоляции и покраски<span> металлическеих кровель Elastomeric 911</span>
             </h1>
-            <img src="img/img-9111.png" alt="">
+            <img src="img/911_kraski1.png" alt="">
         </div>
         <div class="el-911__block-right">
             <div class="el-911__block-form">
@@ -85,9 +105,13 @@
                                for="form__window"></label>
                     </div>
                     <!--Чекбокс-->
-                    <div class="el-911__check__control-label ">
-                        <input class="el-911__check check" type="checkbox" name="checkme" required/>
-                        <span>Я согласен на обработку персональных данных</span>
+                    <div class="uslovie_subscribe">
+                        Нажимая «Получить консультацию», я соглашаюсь получать рекламные и иные маркетинговые сообщения от ООО
+                        "ЭЛАСТОМЕРИК СИСТЕМС" на условиях
+                        <a
+                                href="https://elastomeric.ru/company/polzovatelskoe-soglashenie/" target="_blank">Пользовательского
+                            соглашения
+                        </a>
                     </div>
                     <div class="el-911__btn">
                         <button type="submit" class=""><i
@@ -99,9 +123,10 @@
         </div>
     </div>
 </div>
+<!--О продукте-->
 <div class="fon">
     <div class="container">
-        <h2 class="title_h2">О продукте</h2>
+        <h2 id="o__producte" class="title_h2">О продукте</h2>
         <div class="product__block">
             <div class="product__block__left">
                 <div class="el-911__el-911__text">
@@ -131,13 +156,14 @@
                 </div>
             </div>
             <div class="product__block__right">
-                <img src="img/img-9111.png" alt="">
+                <img src="img/product/911.png" alt="">
             </div>
         </div>
     </div>
 </div>
+<!--Применение-->
 <div class="container">
-    <h2 class="title_h2">Применение</h2>
+    <h2 id="applications" class="title_h2">Применение</h2>
     <div class="el-911__applications">
         <div class="el-911__application">
             <h3>Гидроизоляция и покраска кровельного профнастила</h3>
@@ -316,9 +342,361 @@
         </div>
     </div>
 </div>
+<!--Примеры выполненвых работ-->
+<div class="container">
+    <h2 id="works" class="title_h2">Примеры выполненвых работ</h2>
+    <div class="works">
+        <div class="works__mySwiper">
+            <div class="swiper-wrapper">
+                <div class="works__col-1 swiper-slide">
+
+
+                                    <div class="works__col-1__img ">
+                                        <div class="work__mySwiper">
+                                            <div class="swiper-wrapper " id="lightgallery__col-1" style="overflow: hidden;">
+
+                                                    <a  style="display: block;" class="swiper-slide" href="img/works/arochny_angar/1.jpg"><!-- оригинальное изображение -->
+                                                        <img src="img/works/arochny_angar/1.jpg" alt=""><!-- миниатюра изображения -->
+                                                    </a>
+
+
+                                                    <a  style="display: block;"class="swiper-slide" href="img/works/arochny_angar/2.png">
+                                                        <img src="img/works/arochny_angar/2.png" alt="">
+                                                    </a>
+
+
+                                                    <a  style="display: block;" class="swiper-slide" href="img/works/arochny_angar/3.png" >
+                                                        <img src="img/works/arochny_angar/3.png" alt="">
+                                                    </a>
+
+                                            </div>
+                                            <div class="work_swiper-button-prev"></div>
+                                            <div class="work_swiper-button-next"></div>
+                                        </div>
+                                    </div>
+
+
+
+
+                    <p>
+                        Гидроизоляция сельскохозяйственного арочного ангара
+                    </p>
+
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-2" class="works__col-1__img">
+                        <a href="img/works/volma/1_1.jpg"><!-- оригинальное изображение -->
+                            <img src="img/works/volma/icon.jpg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/volma/1.jpg" class="hidden">
+                            <img src="img/works/volma/1.jpg" alt="">
+                        </a>
+                        <a href="img/works/volma/2.jpg" class="hidden">
+                            <img src="img/works/volma/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/volma/3.jpg" class="hidden">
+                            <img src="img/works/volma/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <p>
+                        Гидроизоляция металлической кровли волма
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-3" class="works__col-1__img">
+                        <a href="img/works/astana/1.jpg"><!-- оригинальное изображение -->
+                            <img src="img/works/astana/icon.jpg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/astana/2.jpg" class="hidden">
+                            <img src="img/works/astana/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/astana/3.jpg" class="hidden">
+                            <img src="img/works/astana/3.jpg" alt="">
+                        </a>
+                        <a href="img/works/astana/4.jpg" class="hidden">
+                            <img src="img/works/astana/4.jpg" alt="">
+                        </a>
+                    </div>
+                    <p>
+                        Ремонт металлической кровли ТРЦ AILAND в Астане
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-4" class="works__col-1__img">
+                        <a href="img/works/molodejny/1.jpg"><!-- оригинальное изображение -->
+                            <img src="img/works/molodejny/icon.jpg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/molodejny/2.jpg" class="hidden">
+                            <img src="img/works/molodejny/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/molodejny/3.jpg" class="hidden">
+                            <img src="img/works/molodejny/3.jpg" alt="">
+                        </a>
+                        <a href="img/works/molodejny/4.jpg" class="hidden">
+                            <img src="img/works/molodejny/4.jpg" alt="">
+                        </a> <a href="img/works/molodejny/5.jpg" class="hidden">
+                        <img src="img/works/molodejny/5.jpg" alt="">
+                    </a>
+                    </div>
+                    <p>
+                        Ремонт металлической кровли спортивного комплекса «МОЛОДЁЖНЫЙ»
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-5" class="works__col-1__img">
+                        <a href="img/works/agroholding/1.jpg"><!-- оригинальное изображение -->
+                            <img src="img/works/agroholding/finish.jpg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/agroholding/2.jpg" class="hidden">
+                            <img src="img/works/agroholding/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/agroholding/3.jpg" class="hidden">
+                            <img src="img/works/agroholding/3.jpg" alt="">
+                        </a>
+                        <a href="img/works/agroholding/4.jpg" class="hidden">
+                            <img src="img/works/agroholding/4.jpg" alt="">
+                        </a>
+                        <a href="img/works/agroholding/5.jpg" class="hidden">
+                            <img src="img/works/agroholding/5.jpg" alt="">
+                        </a>
+                        <a href="img/works/agroholding/6.jpg" class="hidden">
+                            <img src="img/works/agroholding/6.jpg" alt="">
+                        </a>
+                        <a href="img/works/agroholding/7.jpg" class="hidden">
+                            <img src="img/works/agroholding/7.jpg" alt="">
+                        </a>
+                        <a href="img/works/agroholding/finish.jpg" class="hidden">
+                            <img src="img/works/agroholding/finish.jpg" alt="">
+                        </a>
+                    </div>
+                    <p>
+                        Гидроизоляция силосов для хранения зерна компании степь агрохолдинг
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-6" class="works__col-1__img">
+                        <a href="img/works/TRC/1.jpeg"><!-- оригинальное изображение -->
+                            <img src="img/works/TRC/icon.jpeg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/TRC/1.jpeg" class="hidden">
+                            <img src="img/works/TRC/icon.jpeg" alt="">
+                        </a>
+                        <a href="img/works/TRC/2.jpeg" class="hidden">
+                            <img src="img/works/TRC/2.jpeg" alt="">
+                        </a>
+                        <a href="img/works/TRC/3.jpeg" class="hidden">
+                            <img src="img/works/TRC/3.jpeg" alt="">
+                        </a>
+                        <a href="img/works/TRC/4.jpeg" class="hidden">
+                            <img src="img/works/TRC/4.jpg" alt="">
+                        </a>
+                        <a href="img/works/TRC/5.jpeg" class="hidden">
+                            <img src="img/works/TRC/5.jpeg" alt="">
+                        </a>
+                        <a href="img/works/TRC/6.jpg" class="hidden">
+                            <img src="img/works/TRC/6.jpg" alt="">
+                        </a>
+                    </div>
+                    <p>
+                        Гидроизоляция швов металлической крыши крупного ТРЦ
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-7" class="works__col-1__img">
+                        <a href="img/works/andreev/1.jpg"><!-- оригинальное изображение -->
+                            <img src="img/works/andreev/icon.jpg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/andreev/2.jpg" class="hidden">
+                            <img src="img/works/andreev/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/andreev/3.jpg" class="hidden">
+                            <img src="img/works/andreev/3.jpg" alt="">
+                        </a>
+                        <a href="img/works/andreev/4.jpg" class="hidden">
+                            <img src="img/works/andreev/4.jpg" alt="">
+                        </a>
+                        <a href="img/works/andreev/5.jpg" class="hidden">
+                            <img src="img/works/andreev/5.jpg" alt="">
+                        </a>
+                        <a href="img/works/andreev/6.jpg" class="hidden">
+                            <img src="img/works/andreev/6.jpg" alt="">
+                        </a>
+                        <a href="img/works/andreev/7.jpg" class="hidden">
+                            <img src="img/works/andreev/7.jpg" alt="">
+                        </a>
+                        <a href="img/works/andreev/8.jpg" class="hidden">
+                            <img src="img/works/andreev/8.jpg" alt="">
+                        </a>
+                        <a href="img/works/andreev/9.jpg" class="hidden">
+                            <img src="img/works/andreev/9.jpg" alt="">
+                        </a>
+                    </div>
+                    <p>
+                        Акустический Институт имени академика Н.Н. Андреева
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-8" class="works__col-1__img">
+                        <a href="img/works/dollejal/1.jpg"><!-- оригинальное изображение -->
+                            <img src="img/works/dollejal/icon.jpg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/dollejal/2.jpg" class="hidden">
+                            <img src="img/works/dollejal/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/dollejal/3.jpg" class="hidden">
+                            <img src="img/works/dollejal/3.jpg" alt="">
+                        </a>
+
+                        <a href="img/works/dollejal/icon.jpg" class="hidden">
+                            <img src="img/works/dollejal/icon.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <p>
+                        Научно-исследовательский и конструкторский Институт Энерготехники им. Н.А. Доллежаля
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-9" class="works__col-1__img">
+                        <a href="img/works/almata/1.png"><!-- оригинальное изображение -->
+                            <img src="img/works/almata/icon.jpg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/almata/2.jpg" class="hidden">
+                            <img src="img/works/almata/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/almata/3.jpg" class="hidden">
+                            <img src="img/works/almata/3.jpg" alt="">
+                        </a>
+                        <a href="img/works/almata/4.jpg" class="hidden">
+                            <img src="img/works/almata/4.jpg" alt="">
+                        </a>
+                        <a href="img/works/almata/5.jpg" class="hidden">
+                            <img src="img/works/almata/5.jpg" alt="">
+                        </a>
+                        <a href="img/works/almata/6.jpg" class="hidden">
+                            <img src="img/works/almata/6.jpg" alt="">
+                        </a>
+                        <a href="img/works/almata/7.png" class="hidden">
+                            <img src="img/works/almata/7.png" alt="">
+                        </a>
+                        <a href="img/works/almata/8.jpg" class="hidden">
+                            <img src="img/works/almata/8.jpg" alt="">
+                        </a>
+                        <a href="img/works/almata/9.jpg" class="hidden">
+                            <img src="img/works/almata/9.jpg" alt="">
+                        </a>
+                        <a href="img/works/almata/icon.jpg" class="hidden">
+                            <img src="img/works/almata/icon.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <p>
+                        Реконструкция металлической фальцевой кровли г.Алматы
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-10" class="works__col-1__img">
+                        <a href="img/works/muzey/1.png"><!-- оригинальное изображение -->
+                            <img src="img/works/muzey/icon.jpg" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/muzey/2.jpg" class="hidden">
+                            <img src="img/works/muzey/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/muzey/3.jpg" class="hidden">
+                            <img src="img/works/muzey/3.jpg" alt="">
+                        </a>
+                        <a href="img/works/muzey/4.jpg" class="hidden">
+                            <img src="img/works/muzey/4.jpg" alt="">
+                        </a>
+                        <a href="img/works/muzey/5.jpg" class="hidden">
+                            <img src="img/works/muzey/5.jpg" alt="">
+                        </a>
+                        <a href="img/works/muzey/6.jpg" class="hidden">
+                            <img src="img/works/muzey/6.jpg" alt="">
+                        </a>
+                        <a href="img/works/muzey/7.jpg" class="hidden">
+                            <img src="img/works/muzey/7.jpg" alt="">
+                        </a>
+                        <a href="img/works/muzey/icon.jpg" class="hidden">
+                            <img src="img/works/muzey/icon.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <p>
+                        Реконструкция металлической фальцевой кровли г.Алматы
+                    </p>
+                </div>
+                <div class="works__col-1 swiper-slide">
+                    <div id="lightgallery__col-11" class="works__col-1__img">
+                        <a href="img/works/shvi-ar-angar/1.jpg"><!-- оригинальное изображение -->
+                            <img src="img/works/shvi-ar-angar/icon.png" alt=""><!-- миниатюра изображения -->
+                        </a>
+                        <a href="img/works/shvi-ar-angar/2.jpg" class="hidden">
+                            <img src="img/works/shvi-ar-angar/2.jpg" alt="">
+                        </a>
+                        <a href="img/works/shvi-ar-angar/3.jpg" class="hidden">
+                            <img src="img/works/shvi-ar-angar/3.jpg" alt="">
+                        </a>
+                        <a href="img/works/shvi-ar-angar/4.jpg" class="hidden">
+                            <img src="img/works/shvi-ar-angar/4.jpg" alt="">
+                        </a>
+                        <a href="img/works/shvi-ar-angar/5.jpg" class="hidden">
+                            <img src="img/works/shvi-ar-angar/5.jpg" alt="">
+                        </a>
+                        <a href="img/works/shvi-ar-angar/6.jpg" class="hidden">
+                            <img src="img/works/shvi-ar-angar/6.jpg" alt="">
+                        </a>
+                        <a href="img/works/shvi-ar-angar/icon.png" class="hidden">
+                            <img src="img/works/shvi-ar-angar/icon.png" alt="">
+                        </a>
+                    </div>
+                    <p>
+                        Гидроизоляция швов арочного ангара
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-pagination works__swiper-pagination"></div>
+            <div class="swiper-button-prev works__swiper-button-prev"></div>
+            <div class="swiper-button-next works__swiper-button-next"></div>
+        </div>
+    </div>
+</div>
+<!--Купить-->
 <div class="fon">
     <div class="container">
-        <h2 class="title_h2">Отзывы наших клиентов</h2>
+        <h2 id="price" class="title_h2">Купить</h2>
+
+        <div class="price">
+            <div class="price__block-left">
+                <h3>Наша продукция на маркетплейсах!</h3>
+                <div class="price__marcet">
+                    <a href="">
+                        <img src="img/price/ozon-horizontal.png" alt="ozon">
+                    </a>
+                    <a href="">
+                        <img src="img/price/yamarket-hotizontal.png" alt="yamarket">
+                    </a>
+                    <a href="">
+                        <img src="img/price/vseinstrumenty-horizont.jpeg" alt="vseinstrumenty">
+                    </a>
+                    <a href="">
+                        <img src="img/price/leroyM-horizontal.png" alt="Leroy Merlin">
+                    </a>
+                </div>
+            </div>
+            <div class="price__block-right">
+                <div class="price__img">
+                    <img src="img/price/korzina.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Отзывы наших клиентов-->
+<div class="fon">
+    <div class="container">
+        <h2 id="otzivy" class="title_h2">Отзывы наших клиентов</h2>
         <div class="mySwiper">
             <div class="otzivy swiper-wrapper">
                 <div class="otzivy__rows swiper-slide">
@@ -391,93 +769,15 @@
                 </div>
             </div>
             <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -5--->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar qwqw"></div>
         </div>
     </div>
 </div>
+
+<!--Контакты-->
 <div class="container">
-    <h2 class="title_h2">Пример выполненвых работ</h2>
-    <div class="works">
-        <div class="works__mySwiper">
-            <div class="swiper-wrapper">
-                <div class="works__col-1 swiper-slide">
-                    <div id="lightgallery" class="works__col-1__img">
-                        <a href="img/works/arochny_angar/1.jpg"><!-- оригинальное изображение -->
-                            <img src="img/works/arochny_angar/1.jpg" alt=""><!-- миниатюра изображения -->
-                        </a>
-                        <a href="img/works/arochny_angar/2.png" class="hidden">
-                            <img src="img/works/arochny_angar/2.png" alt="">
-                        </a>
-                        <a href="img/works/arochny_angar/3.png" class="hidden">
-                            <img src="img/works/arochny_angar/3.png" alt="">
-                        </a>
-                    </div>
-                    <p>
-                        Гидроизоляция сельскохозяйственного арочного ангара
-                    </p>
-
-                </div>
-                <div class="works__col-1 swiper-slide">
-                    <div class="works__col-1__img">
-
-                        <img src="img/works/arochny_angar/2.png" alt="">
-                    </div>
-                    <p>
-                        Гидроизоляция сельскохозяйственного арочного ангара
-                    </p>
-                </div>
-                <div class="works__col-1 swiper-slide">
-                    <div class="works__col-1__img">
-                        <img src="img/works/arochny_angar/3.png" alt="">
-                    </div>
-                    <p>
-                        Гидроизоляция сельскохозяйственного арочного ангара
-                    </p>
-                </div>
-                <div class="works__col-1 swiper-slide">
-                    <div class="works__col-1__img">
-                        <img src="img/works/arochny_angar/4.jpg" alt="">
-                    </div>
-                    <p>
-                        Гидроизоляция сельскохозяйственного арочного ангара
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-</div>
-</div>
-</div>
-<div class="swiper-pagination"></div>
-
-<!-- If we need navigation buttons -5--->
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
-
-<!-- If we need scrollbar -->
-<div class="swiper-scrollbar qwqw"></div>
-</div>
-
-
-<div class="fon">
-    <div class="container">
-        <h2>Купить</h2>
-        <div class="price">
-
-        </div>
-    </div>
-</div>
-<div class="container">
-    <h2>Контакты</h2>
+    <h2 id="contacts" class="title_h2">Контакты</h2>
     <div class="contacts">
         <div class="el-911__block-left contacts__block-left">
             <div class="el-911__block-form  contacts__block-form">
@@ -497,10 +797,13 @@
                         <label class="el-911__tel__control-label control-label"
                                for="form__window"></label>
                     </div>
-                    <!--Чекбокс-->
-                    <div class="el-911__check__control-label ">
-                        <input class="el-911__check check" type="checkbox" name="checkme" required/>
-                        <span>Я согласен на обработку персональных данных</span>
+                    <div class="uslovie_subscribe">
+                        Нажимая «Получить консультацию», я соглашаюсь получать рекламные и иные маркетинговые сообщения от ООО
+                        "ЭЛАСТОМЕРИК СИСТЕМС" на условиях
+                        <a
+                                href="https://elastomeric.ru/company/polzovatelskoe-soglashenie/" target="_blank">Пользовательского
+                            соглашения
+                        </a>
                     </div>
                     <div class="el-911__btn">
                         <button type="submit" class=""><i
@@ -543,6 +846,7 @@
         </div>
     </div>
 </div>
+<div class="btn-up btn-up_hide"></div>
 
 
 <script>
@@ -561,8 +865,22 @@
 
 </script>
 <script>
-    var swiper = new Swiper(".works__mySwiper", {
+    var swiperW = new Swiper(".works__mySwiper", {
         slidesPerView: 3,
+        spaceBetween: 50,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+<script>
+    var swiperWr = new Swiper(".work__mySwiper", {
+        slidesPerView: 1,
         spaceBetween: 50,
         pagination: {
             el: ".swiper-pagination",
@@ -585,9 +903,154 @@
 <script src="dist/js/lg-thumbnail.js"></script>
 <script src="dist/js/lg-video.js"></script>
 <script>
-    lightGallery(document.getElementById('lightgallery'), {
+    lightGallery(document.getElementById('lightgallery__col-1'), {
         thumbnail: true,
     });
 </script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-2'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-3'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-4'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-5'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-6'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-7'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-8'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-9'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-10'), {
+        thumbnail: true,
+    });
+</script>
+<script>
+    lightGallery(document.getElementById('lightgallery__col-11'), {
+        thumbnail: true,
+    });
+</script>
+<!-Маяк-->
+<script>
+    const smothScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+    smothScrollElems.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault()
+            const id = link.getAttribute('href').substring(1)
+
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth'
+            })
+
+        })
+    })
+</script>
+<!-.Маяк-->
+<!--Кнопка наверх-->
+<script>
+    const btnUp = {
+        el: document.querySelector('.btn-up'),
+        show() {
+            // удалим у кнопки класс btn-up_hide
+            this.el.classList.remove('btn-up_hide');
+        },
+        hide() {
+            // добавим к кнопке класс btn-up_hide
+            this.el.classList.add('btn-up_hide');
+        },
+        addEventListener() {
+            // при прокрутке содержимого страницы
+            window.addEventListener('scroll', () => {
+                // определяем величину прокрутки
+                const scrollY = window.scrollY || document.documentElement.scrollTop;
+                // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+                scrollY > 400 ? this.show() : this.hide();
+            });
+            // при нажатии на кнопку .btn-up
+            document.querySelector('.btn-up').onclick = () => {
+                // переместим в начало страницы
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    }
+    btnUp.addEventListener();
+</script>
+<!--.Кнопка наверх-->
+<!--Бургер меню-->
+
+<script>
+    const hamb = document.querySelector("#hamb");
+    const popup = document.querySelector("#popup");
+    const body = document.body;
+
+    // Клонируем меню, чтобы задать свои стили для мобильной версии
+    const menu = document.querySelector("#menu").cloneNode(1);
+
+    // При клике на иконку hamb вызываем ф-ию hambHandler
+    hamb.addEventListener("click", hambHandler);
+
+    // Выполняем действия при клике ..
+    function hambHandler(e) {
+        e.preventDefault();
+        // Переключаем стили элементов при клике
+        popup.classList.toggle("open");
+        hamb.classList.toggle("active");
+        body.classList.toggle("noscroll");
+        renderPopup();
+    }
+
+    // Здесь мы рендерим элементы в наш попап
+    function renderPopup() {
+        popup.appendChild(menu);
+    }
+
+    // Код для закрытия меню при нажатии на ссылку
+    const links = Array.from(menu.children);
+
+    // Для каждого элемента меню при клике вызываем ф-ию
+    links.forEach((link) => {
+        link.addEventListener("click", closeOnClick);
+    });
+
+    // Закрытие попапа при клике на меню
+    function closeOnClick() {
+        popup.classList.remove("open");
+        hamb.classList.remove("active");
+        body.classList.remove("noscroll");
+    }
+</script>
+<!--.Бургер меню-->
+
 </body>
 </html>

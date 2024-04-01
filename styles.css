@@ -8,27 +8,33 @@ a {
 
 }
 
+
 h1 {
     font-size: 3.125rem;
+    /*font-size: calc(20px + (38 - 20) * ((100vw - 320px) / (1170 - 320)));*/
+    /*font-size: calc(28px + 22 * (100vw/1200));*/
+
 }
 
 
 h2 {
-    font-size: 2.1875rem;
+    /*font-size: 2.1875rem;*/
     color: #fff;
+    font-size: calc(28px + (32 - 28) * ((100vw - 320px) / (1200 - 320)));
 }
 
 h3 {
-    font-size: 1.75rem;
+    /*font-size: 1.75rem;*/
+    font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1200 - 320)));
     color: #f8f8f8;
 }
 
 p {
-    font-size: 1.25rem;
+    /*font-size: 1.25rem;*/
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
     line-height: 1.5;
     color: #fff;
 }
-
 body {
     font-family: 'Raleway', Arial, sans-serif;
     /*background-image: url("img/fon.jpg ");*/
@@ -58,45 +64,88 @@ body {
     padding-right: 15px;
 }
 
+
 /*Вверхнее  меню*/
-.top-menu {
-    background-color: #191919;
-    border-radius: 10px;
-    font-weight: bold;
+
+.navbar {
+    border-radius: 20px;
+    background: #191919;
 }
 
-.top-menu__logo img {
+.navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+}
+
+.hamb {
+    display: none;
+}
+
+.popup {
+    display: none;
+}
+
+.logo img {
     width: 100%;
-    max-width: 200px;
-    height: 100%;
-    object-fit: contain;
+    max-width: 184px;
+    min-width: 90px;
 
 }
 
-.top-menu__item, .top-menu {
+.menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    list-style-type: none;
+    width: 65%;
     gap: 10px;
-    width: 100%;
+
 }
 
-.top-menu__item :hover a {
-    color: #D12030;
-}
+.menu img {
 
-.el-911__email img {
     width: 32px;
     transition: 1s
 }
 
-.el-911__email :hover {
+.menu__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*gap: 20px;*/
+    width: 30%;
+    padding-right: 20px;
+}
+
+.menu__block li {
+    list-style-type: none;
+}
+
+
+.menu > li {
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 500;
+
+}
+
+.navbar__wrap ul > li > a:hover {
+    color: #D12030;
+}
+
+.menu__block > li > a > img {
+    width: 32px;
+    transition: 1s
+}
+
+.menu__block > li > a :hover {
     width: 32px;
     transform: scale(1.2);
 }
 
 /*.Вверхнее  меню*/
+
 
 
 /*Body*/
@@ -105,7 +154,7 @@ body {
 .el-911__block-one {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 40px;
     margin-top: 20px;
@@ -113,12 +162,11 @@ body {
 }
 
 .el-911__block-left {
-    flex: 0 0 50%;
+    flex: 1 0 55%;
 }
 
 .el-911__block-left h1 {
     color: #f8f8f8;
-    font-size: 50px;
     line-height: 1;
     font-weight: 500;
     letter-spacing: -1.5px;
@@ -133,9 +181,14 @@ body {
 }
 
 .el-911__block-left img {
-    width: 310px;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     display: block;
+}
+.el-911__block-right{
+    flex: 1 0 41%;
+
 }
 
 .el-911__block-form {
@@ -146,7 +199,9 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
+    max-width:500px;
+    margin: 0 auto;
 
 }
 
@@ -213,7 +268,10 @@ body {
     gap: 10px;
     padding-left: 20px;
 }
-
+.uslovie_subscribe{
+    font-size: 14px;
+    text-align: center;
+}
 .el-911__btn {
     text-align: center;
     padding-top: 20px;
@@ -229,6 +287,9 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+.el-911__btn button:hover{
+    background: #9a111e;
+}
 
 /*О продкте*/
 .fon {
@@ -241,6 +302,10 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 10px;
+}
+
+.product__block__right img {
+    width: 100%;
 }
 
 
@@ -262,10 +327,25 @@ body {
 }
 
 .el-911__application-wrap {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    padding: 0 0 60px;
+}
+
+.el-911__application-wrap:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #D12030;
+    width: 552px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .el-911__block-application__left {
@@ -321,9 +401,9 @@ body {
     border-radius: 20px;
     padding: 30px;
     margin: 0;
-    font-size: 15px;
     color: #ffffff;
     line-height: 1.5;
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1200 - 320)));
 }
 
 .otzivy__bubble-tail {
@@ -353,23 +433,151 @@ body {
 
 /*.Отзывы*/
 /*Применение  */
-.works__mySwiper{
+
+.works__mySwiper {
     overflow: hidden;
-    /*height: 240px;*/
+    position: relative;
+    padding-bottom: 60px;
+
 }
+
+.swiper-button-prev {
+    /*background: rgba(232, 232, 232, 0.6);*/
+    border-radius: 50%;
+    padding: 7px !important;
+    height: auto !important;
+    left: 15% !important;
+}
+
+.swiper-button-prev:after {
+    font-size: 24px !important;
+    line-height: 0;
+}
+
+.swiper-button-next {
+    /*background: rgba(232, 232, 232, 0.6);*/
+    border-radius: 50%;
+    padding: 7px !important;
+    height: auto !important;
+    right: 15% !important;
+}
+
+.swiper-button-next:after {
+    font-size: 24px !important;
+    line-height: 0;
+}
+
+.works__swiper-button-prev {
+    position: absolute;
+    left: 0 !important;
+}
+
+.works__swiper-button-next {
+    position: absolute;
+    right: 0 !important;
+}
+
+.swiper-pagination span {
+
+    background: #D12030;
+
+}
+
+.swiper-pagination {
+
+    padding-bottom: 20px;
+
+}
+
 .works__col-1 img {
     width: 100%;
     height: auto;
     object-fit: cover;
     aspect-ratio: 4/3;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.works__col-1 {
+    background: #333332;
+    border-radius: 10px;
+    height: auto !important;
+
 }
 
 .works__col-1__img .hidden {
     display: none;
 }
 
+.works__col-1 p {
+    padding: 0 10px;
+}
+
 
 /*.Применение  */
+/*Купить*/
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.price__block-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333332;
+    aspect-ratio: 16/7;
+    border-radius: 10px;
+
+}
+
+.price__block-left img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: cover;
+    aspect-ratio: 20/9;
+}
+
+.price__marcet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+.price__marcet a {
+    flex: 0 0 33%;
+}
+
+.price__block-left a {
+    text-align: center;
+
+}
+
+.price__block-right {
+    position: relative;
+    flex: 0 0 45%;
+}
+
+.price__img {
+    display: flex;
+}
+
+.price__img img {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*.Купить*/
 /*Контакты*/
 .contacts {
     display: flex;
@@ -400,10 +608,10 @@ body {
     gap: 20px;
     align-items: center;
 
-    width: 100%
-;
+    width: 100%;
 }
-.contacts__message img{
+
+.contacts__message img {
     width: 56px;
 }
 
@@ -417,3 +625,46 @@ footer {
 }
 
 /*.footer*/
+
+
+/*Кнопка*/
+body {
+    min-height: 2000px;
+}
+
+.btn-up {
+    position: fixed;
+    background-color: #D12030;
+    right: 20px;
+    bottom: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 85px;
+}
+
+.btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+.btn-up_hide {
+    display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+        background-color: #D12030;
+    }
+}
+
+
+/*.Кнопка*/
