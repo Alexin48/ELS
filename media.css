@@ -183,18 +183,7 @@
 
         opacity: 0;
     }
-    .price__marcet {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
 
-    .price__marcet a {
-        flex: 0;
-    }
 
     .price__block-left img {
         width: 150px;
@@ -220,6 +209,9 @@
         text-align: center;
         padding: 20px 0;
         gap: 0;
+    }
+    .contacts__message {
+        justify-content: center;
     }
 
     /*.Контакты*/
@@ -257,6 +249,17 @@
     /*Вверхнее  меню*/
     .menu__info {
         display: none;
+    }
+
+    /*Вверхнее  меню*/
+}
+
+@media (max-width: 464px) {
+    /*Вверхнее  меню*/
+    .price__marcet a {
+       display: block;
+        width: 100%;
+        padding: 0;
     }
 
     /*Вверхнее  меню*/

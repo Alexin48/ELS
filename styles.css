@@ -7,34 +7,28 @@ li {
     list-style-type: none;
     font-size: 1rem;
     line-height: 1.5;
-
 }
 
 a {
     text-decoration: none;
     color: #FFFFFF;
-
 }
 
 
 h1 {
     font-size: 3.125rem;
-
-
 }
 
 
 h2 {
-    /*font-size: 2.1875rem;*/
     color: #f8f8f8;
     font-size: calc(28px + (32 - 28) * ((100vw - 320px) / (1200 - 320)));
-    /*font-size: 2.5rem;*/
+
 }
 
 h3 {
     font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1200 - 320)));
     color: #f8f8f8;
-    /*margin: 30px;*/
 
 }
 
@@ -42,7 +36,6 @@ p {
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
     line-height: 1.5;
     color: #b3b3b3;
-    text-indent: 25px;
 }
 
 body {
@@ -191,8 +184,7 @@ body {
 /*.Вверхнее  меню*/
 
 
-/*Body*/
-
+/*Оставить заявку*/
 
 .el-911__block-one {
     display: flex;
@@ -233,17 +225,12 @@ body {
 }
 
 .el-911__block-right {
-    flex: 1 0 41%;
     color: #fff;
-    font-size: 35px;
-}
-
-.contacts__info {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .contacts__tel {
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .el-911__block-form {
@@ -268,7 +255,8 @@ body {
 }
 
 .el-911__link-tel a {
-    color: #c8102e;
+    /*color: #c8102e; */
+    color: #f8f8f8;
 }
 
 .el-911__form {
@@ -338,7 +326,6 @@ body {
 .el-911__btn {
     text-align: center;
     padding-top: 20px;
-
 }
 
 .el-911__btn button {
@@ -354,6 +341,7 @@ body {
 .el-911__btn button:hover {
     background: #9a111e;
 }
+/*.Оставить заявку*/
 
 /*О продкте*/
 .logo__fon-2 {
@@ -381,7 +369,7 @@ body {
 
 .product__block__right img {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     height: auto;
 }
 
@@ -397,12 +385,15 @@ body {
     color: #b3b3b3;
 }
 
+.product__block__text ul > li {
+    text-indent: 25px;
+}
+
 .product__block__text span {
-    color: #c8102e;
+    /*color: #c8102e; */
+    color: #f8f8f8;
     margin-bottom: 0;
     font-weight: 600;
-
-
 }
 
 .product__block__text {
@@ -414,9 +405,8 @@ body {
     color: #b3b3b3;
     list-style-type: none;
 }
-
-
 /*.О продкте*/
+
 /*Применение*/
 .logo__fon-4 {
     position: absolute;
@@ -490,17 +480,28 @@ body {
     text-align: justify;
 }
 
+.el-911__block-application__left p {
+    font-weight: 500;
+    text-indent: 25px;
+}
+
 .el-911__block-application__left p > span {
-    color: #c8102e
+    /*color: #c8102e;  */
+    color: #f8f8f8;
 }
 
 .el-911__block-application__left ul {
     list-style-type: none;
 }
 
+.el-911__block-application__left > ul > li {
+    text-indent: 25px;
+}
+
 .el-911__block-application__left ul > li > span {
     list-style-type: none;
-    color: #c8102e
+    /*color: #c8102e*/
+    color: #f8f8f8;
 }
 
 .el-911__application span {
@@ -525,9 +526,8 @@ body {
 }
 
 /*.Применение*/
+
 /*Отзывы*/
-
-
 .otzivy__mySwiper {
     overflow: hidden;
     padding-bottom: 70px;
@@ -576,35 +576,28 @@ body {
 }
 
 .otzivy__name {
-    color: #c8102e;
+    /*color: #c8102e;*/
+    color: #f8f8f8;
 }
-
 /*.Отзывы*/
-/*Примеры выполненвых работ  */
 
+/*Примеры выполненвых работ  */
 .works__mySwiper {
     overflow: hidden;
     position: relative;
     padding-bottom: 60px;
-
 }
-
 .swiper-button-next, .swiper-button-prev {
     top: 121px !important;
 }
-
 
 .swiper-pagination span {
 
     background: #c8102e;
 }
-
 .swiper-pagination {
-
     padding-bottom: 20px;
-
 }
-
 
 .works__swiper-button-prev, .works__swiper-button-next {
     top: 160px !important;
@@ -620,14 +613,12 @@ body {
     object-fit: cover;
     aspect-ratio: 4/3;
     border-radius: 10px 10px 0 0;
-
 }
 
 .works__col-1 {
     background: #333332;
     border-radius: 10px;
     height: auto !important;
-
 }
 
 .works__col-1__img .hidden {
@@ -637,73 +628,29 @@ body {
 .works__col-1 p {
     padding: 0 10px;
 }
-
-
 /*.Примеры выполненвых работ  */
+
 /*Купить*/
 .price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    margin: 20px auto;
     position: relative;
 }
 
-.price__block-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #333332;
-    aspect-ratio: 16/7;
-    border-radius: 10px;
-    padding-bottom: 30px;
-
-}
-
-.price__block-left img {
+.price img {
     width: 100%;
-    max-width: 150px;
-    height: 100%;
+    max-width: 180px;
+    height: auto;
     border-radius: 10px;
-    object-fit: cover;
-    background-size: cover;
-    aspect-ratio: 20/9;
-}
-
-.price__marcet {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
 }
 
 .price__marcet a {
-    flex: 0 0 33%;
-}
-
-.price__block-left a {
     text-align: center;
-
-}
-
-.price__block-right {
-    position: relative;
-    flex: 0 0 45%;
-}
-
-.price__img {
-    display: flex;
-}
-
-.price__img img {
-    max-width: 340px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+    padding: 0 10px;
 }
 
 /*.Купить*/
+
 /*Контакты*/
 .logo__fon-3 {
     position: absolute;
@@ -718,8 +665,7 @@ body {
 .contacts {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: #191919;
+    justify-content: center;
     padding: 20px;
     border-radius: 10px;
     gap: 20px;
@@ -735,43 +681,32 @@ body {
 
 .contacts__info {;
     font-size: calc(20px + (28 - 20) * ((100vw - 320px) / (1200 - 320)));
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 10px;
-
+    line-height: 1.5;
 }
 
 .contacts__message {
-
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .contacts__message > li > a > img {
-    max-width: 32px;
+    max-width: 40px;
     width: 100%;
     height: auto;
     transition: 1s
 }
 
+.contacts__tel a:hover {
+    color: #b3b3b3;
+}
+
 .contacts__message > li > a :hover {
-    width: 32px;
+    width: 52px;
     transform: scale(1.2);
 }
-
 /*.Контакты*/
-
-/*.Body*/
-
-/*footer*/
-footer {
-    height: 410px;
-}
-
-/*.footer*/
 
 
 /*Кнопка*/
@@ -813,6 +748,4 @@ body {
         background-color: #c8102e;
     }
 }
-
-
 /*.Кнопка*/
