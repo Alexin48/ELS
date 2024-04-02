@@ -56,6 +56,27 @@ body {
     background-color: #1e1e1e;
 }
 
+.logo__fon-1 {
+    position: absolute;
+    top: 0;
+    right: -3%;
+    width: 100%;
+    height: auto;
+    max-width: 821px;
+    opacity: 0.1;
+}
+
+
+.logo__fon-1_1 {
+    position: absolute;
+    top: 4%;
+    right: 69%;
+    width: 100%;
+    height: auto;
+    max-width: 542px;
+    opacity: 0.1;
+}
+
 .title_h2 {
     border-bottom: 1px solid #f8f8f8;
     padding: 15px 10px;
@@ -83,6 +104,8 @@ body {
 /*Вверхнее  меню*/
 
 .navbar {
+    position: relative;
+    z-index: 1;
     border-radius: 20px;
     background: #191919;
 }
@@ -178,6 +201,8 @@ body {
     align-items: center;
     padding-bottom: 40px;
     margin-top: 20px;
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -331,6 +356,16 @@ body {
 }
 
 /*О продкте*/
+.logo__fon-2 {
+    position: absolute;
+    top: 4px;
+    right: -2%;
+    width: 100%;
+    height: auto;
+    max-width: 655px;
+    opacity: 0.1;
+}
+
 .fon {
     position: relative;
     background: #191919;
@@ -341,6 +376,7 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 10px;
+    position: relative;
 }
 
 .product__block__right img {
@@ -382,6 +418,46 @@ body {
 
 /*.О продкте*/
 /*Применение*/
+.logo__fon-4 {
+    position: absolute;
+    top: 24%;
+    right: 60%;
+    width: 100%;
+    height: auto;
+    max-width: 821px;
+    opacity: 0.02;
+}
+
+.logo__fon-4_1 {
+    position: absolute;
+    top: 34%;
+    right: -1%;
+    width: 100%;
+    height: auto;
+    max-width: 821px;
+    opacity: 0.02;
+}
+
+.logo__fon-4_2 {
+    position: absolute;
+    top: 47%;
+    right: 60%;
+    width: 100%;
+    height: auto;
+    max-width: 821px;
+    opacity: 0.02;
+}
+
+.logo__fon-4_3 {
+    position: absolute;
+    top: 56%;
+    right: -1%;
+    width: 100%;
+    height: auto;
+    max-width: 821px;
+    opacity: 0.02;
+}
+
 .el-911__title-application {
     border-bottom: 1px solid #f8f8f8;
 }
@@ -455,6 +531,7 @@ body {
 .otzivy__mySwiper {
     overflow: hidden;
     padding-bottom: 70px;
+    position: relative;
 }
 
 .swiper-button-prev {
@@ -512,27 +589,8 @@ body {
 
 }
 
-.swiper-button-prev {
-    height: auto !important;
-    left: 28% !important;
-    top: 44% !important;
-}
-
-.swiper-button-prev:after {
-    font-size: 30px !important;
-    font-weight: 600;
-}
-
-.swiper-button-next {
-    height: auto !important;
-    right: 28% !important;
-    top: 44% !important;
-}
-
-.swiper-button-next:after {
-    font-size: 24px !important;
-    line-height: 0;
-
+.swiper-button-next, .swiper-button-prev {
+    top: 121px !important;
 }
 
 
@@ -547,23 +605,12 @@ body {
 
 }
 
-.works__swiper-button-prev:after {
-    font-size: 30px !important;
-    font-weight: 600;
-}
 
-.works__swiper-button-prev {
-    height: auto !important;
-    left: 0 !important;
-}
-
-.works__swiper-button-next {
-    height: auto !important;
-    right: 0 !important;
+.works__swiper-button-prev, .works__swiper-button-next {
+    top: 160px !important;
 }
 
 .works__swiper-pagination span {
-
     background: #c8102e;
 }
 
@@ -658,6 +705,16 @@ body {
 
 /*.Купить*/
 /*Контакты*/
+.logo__fon-3 {
+    position: absolute;
+    top: 0;
+    right: -3%;
+    width: 100%;
+    height: auto;
+    max-width: 821px;
+    opacity: 0.1;
+}
+
 .contacts {
     display: flex;
     align-items: center;
